@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carre yo t amo</title>
+    <style>
+       .body {
+     background-color: aliceblue;
+     text-align: center;  
+    } 
+   
+    .body__img {
+      width: 100%;
+      max-width: 512px;
+    }
+    </style>
+</head>
+
+<body class="body">
+    <h1 class="body__title">Aceptas a este viejo cachudo, abandonado, guapo, hermoso, bello como pareja?</h1>
+    <img
+    src="https://i.pinimg.com/564x/b3/34/f6/b334f654f241ef37caded19943dcc515.jpg"
+    alt="foto del guapo"/>
+    <br>
+    <button id="yes">Dio mio q guapo</button>
+    <button id="no">Naaa</button>
+  
+    <script>
+        const vuttonSi = document.getElementById('yes');
+        const vuttonNo = document.getElementById('no');
+    
+        const feliz1deabril= () => {
+          alert('Ayyyyyyyyyyyyyy');
+          alert('Huyamos y casemonos');
+          location.href = 'https://www.youtube.com/watch?v=UEBDeZiDzRw=57';
+        };
+    
+        const EbitarelNo = () => {
+          vuttonNo.style.position = 'absolute';
+          vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+          vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+        };
+    
+        vuttonSi.addEventListener('click', feliz1deabril);
+        vuttonNo.addEventListener('mouseover', EbitarelNo);
+      </script>
+    </body>
+    
+    </html>
